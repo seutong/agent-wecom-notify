@@ -1,0 +1,27 @@
+{
+  "name": "@local/dsh-wecom-notify",
+  "version": "0.2.0",
+  "private": true,
+  "icon": "./icon.svg",
+  "description": "Host-only DSH enterprise WeChat reminders",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "transport.js",
+    "format.js",
+    "check.mjs",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json"
+  ],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node check.mjs"
+  }
+}

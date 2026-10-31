@@ -1,0 +1,11 @@
+- insert:
+    - id: dsh-wecom-notify
+      name: '@local/dsh-wecom-notify'
+      config:
+        webhookFile: '' # REQUIRED: set an absolute path to your private webhook file
+        completion: true
+        includeExcerpts: false # Opt in explicitly to send task/reply previews to the group.
+        approval: true
+        question: true
+        delayMs: 800
+        timeoutMs: 3000

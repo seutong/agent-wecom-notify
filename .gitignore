@@ -1,0 +1,19 @@
+# Do not commit webhook credentials, local installations or backups.
+.DS_Store
+**/__pycache__/
+*.py[cod]
+**/node_modules/
+**/.codex/
+**/.dsh/
+**/.env
+**/.env.*
+**/wecom_webhook
+**/wecom_webhook.*
+**/config.toml
+**/hooks.json
+*.bak-*
+*.log
+*.tgz
+
+# Local validation reports and scratch files.
+/local-checks/

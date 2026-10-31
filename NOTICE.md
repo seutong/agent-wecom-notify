@@ -1,0 +1,6 @@
+# Attribution and changes
+
+- **Original Codex notification script:** Juse, [“将 Codex CLI 运行状况接入企业微信通知”](https://biojuse.com/2026/09/15/codex-cli-wecom-notification/) and its [downloadable Python script](https://biojuse.com/assets/codex_notify_wecom.py), published under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The locally archived original script was recorded with SHA-256 `94e08774c0312c1bd776a2292d0bea5552aba1600ddedf35cb6c23644624eec2` (historical provenance, not a checksum of this derivative).
+- **Changes in this repository:** `codex/codex_notify_wecom.py` adapts path expansion, adds `CODEX_HOME` and webhook-file environment support, and adds conservative omission of credential-bearing notification fields; message length limits remain in place. `codex/install_codex_wecom.py` adds a repeatable installer with backups, hook merging and checks. This adaptation is **not** an official Codex or Juse release.
+- **DSH implementation:** `dsh/` is a separate original Host-only Bundle using DeepSeek Harness events, not a copy of the Codex script or an official DSH plugin.
+- With the repository owner's permission, **this assembled repository is offered under CC BY-NC-SA 4.0**; see [LICENSE](LICENSE). Preserve the original Codex author/source attribution and modification notice when redistributing. The license restricts commercial use.
